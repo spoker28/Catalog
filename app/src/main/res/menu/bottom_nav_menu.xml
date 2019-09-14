@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:title="Карта"/>
+
+    <item
+            android:id="@+id/navigation_discount"
+            android:icon="@drawable/android"
+            android:title="@string/title_discount"/>
+
+    <item
+            android:id="@+id/navigation_recomendation"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/title_recomendation"/>
+
+    <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/title_settings"/>
+
+</menu>
