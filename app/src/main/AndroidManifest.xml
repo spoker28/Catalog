@@ -12,7 +12,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ItemRecomendationActivity">
+        <activity android:name=".presentation.InstitutionsList.ItemInstitutionsActivity">
         </activity>
         <activity android:name=".ItemDiscountActivity">
         </activity>
