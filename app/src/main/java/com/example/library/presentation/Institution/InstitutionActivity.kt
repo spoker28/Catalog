@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.library.Place
+import com.example.library.Places
 import com.example.library.R
 import com.example.library.entities.CategoryItem
 import kotlinx.android.synthetic.main.activity_institution.*
+import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 
@@ -37,7 +39,7 @@ class InstitutionActivity : AppCompatActivity(),InstitutionAdapter.InstitutionLi
 
 
     override fun onClick(item: CategoryItem) {
-        val mIntent = Intent(this, Place::class.java)
+        val mIntent = Intent(this, main::class.java)
         startActivity(mIntent)
     }
 }
