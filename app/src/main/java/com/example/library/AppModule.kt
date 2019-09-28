@@ -3,6 +3,7 @@ package com.example.library
 import com.example.library.base.CoroutineProvider
 import com.example.library.presentation.Institution.InstitutionRepository
 import com.example.library.presentation.Institution.InstitutionViewModel
+import com.example.library.presentation.InstitutionsList.InstitutionListViewModel
 import com.example.library.presentation.sample.SampleRepository
 import com.example.library.presentation.sample.SampleViewModel
 import com.google.firebase.database.FirebaseDatabase
@@ -36,6 +37,10 @@ val appModule = module {
 
     viewModel {
         InstitutionViewModel(get())
+    }
+
+    viewModel {
+        InstitutionListViewModel(get())
     }
 }
 

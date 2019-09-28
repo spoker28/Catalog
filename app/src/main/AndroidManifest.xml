@@ -17,15 +17,10 @@
         <activity android:name=".ItemDiscountActivity">
         </activity>
         <activity
-                android:name=".Places"
-                android:label="@string/title_activity_places">
-        </activity>
-        <activity
                 android:name=".presentation.main.MainActivity"
                 android:label="@string/title_activity_main">
         </activity>
-        <activity android:name=".Place">
-        </activity>
+
         <activity android:name=".presentation.Institution.InstitutionActivity">
         </activity>
         <activity

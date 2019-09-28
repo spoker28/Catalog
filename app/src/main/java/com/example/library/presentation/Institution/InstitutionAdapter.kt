@@ -46,9 +46,6 @@ class InstitutionAdapter : RecyclerView.Adapter<InstitutionAdapter.InstitutionVi
             itemView.button.setOnClickListener{
                 listener?.onClick(dataSet[adapterPosition])
             }
-            itemView.titlebutton.setOnClickListener{
-                listener?.onClick(dataSet[adapterPosition])
-            }
         }
     }
 
