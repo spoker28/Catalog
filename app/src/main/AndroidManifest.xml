@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.example.library">
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.example.library">
 
     <application
             android:name=".App"
@@ -12,30 +12,27 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".presentation.InstitutionsList.ItemInstitutionsActivity">
-        </activity>
-        <activity android:name=".ItemDiscountActivity">
-        </activity>
+        <activity android:name=".presentation.institutionInfo.InstitutionsDetailActivity"></activity>
+        <activity android:name=".presentation.institutionInfo.InstitutionDetailFragment" />
+        <activity android:name=".presentation.InstitutionsList.ItemInstitutionsActivity" />
+        <activity android:name=".ItemDiscountActivity" />
         <activity
                 android:name=".presentation.main.MainActivity"
-                android:label="@string/title_activity_main">
-        </activity>
-
-        <activity android:name=".presentation.Institution.InstitutionActivity">
-        </activity>
+                android:label="@string/title_activity_main" />
+        <activity android:name=".presentation.Institution.InstitutionActivity" />
         <activity
                 android:name=".presentation.SplashActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/SplashTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
                 android:name=".presentation.sample.SampleActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -8,17 +8,17 @@
 
     <item
             android:id="@+id/navigation_discount"
-            android:icon="@drawable/discount"
+            android:icon="@drawable/percent"
             android:title="@string/title_discount"/>
 
     <item
             android:id="@+id/navigation_recomendation"
-            android:icon="@drawable/ic_list_black_24dp"
+            android:icon="@drawable/quality"
             android:title="@string/title_recomendation"/>
 
     <item
-            android:id="@+id/navigation_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
+            android:id="@+id/navigation_comparison"
+            android:icon="@drawable/comparison"
             android:title="@string/title_settings"/>
 
 </menu>

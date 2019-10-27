@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.afollestad:viewpagerdots:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/847eacf2d368246f78f24d8b9403de89/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/847eacf2d368246f78f24d8b9403de89/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/viewpagerdots/1.0.0/728c56f17daacca04b994244f0b74850f3bd6d1f/viewpagerdots-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

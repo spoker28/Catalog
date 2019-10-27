@@ -1,5 +1,6 @@
 package com.example.library.presentation.InstitutionsList
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -8,8 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.library.R
 import com.example.library.base.BaseFragment
 import com.example.library.entities.Institution
+import com.example.library.presentation.institutionInfo.InstitutionsDetailActivity
 import kotlinx.android.synthetic.main.fragment_institutions.*
 import org.koin.androidx.viewmodel.ext.android.getViewModel
+import java.io.Serializable
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,7 +59,10 @@ class InstitutionsFragment : BaseFragment(),OnInstitutionClickListener {
 
 
     override fun onClick(pos: Int, item: Institution) {
-//        val intent = Intent(context,)
+        val intent = Intent(context,InstitutionsDetailActivity::class.java)
+        intent.putExtra("institution",item as Serializable)// отправляет информацию об ивенте в InstitutionDetailActivity
+        startActivity(intent)
+
     }
 
 }

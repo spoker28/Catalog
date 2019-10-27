@@ -17,12 +17,57 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
         list.apply {
             add(
                 Institution(
-                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло")
+                    "Bazungasavdgdsagdasdgsfaaaaaaabbbbbbbbbbbbbbb",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "https://media-cdn.tripadvisor.com/media/photo-s/0b/ed/85/50/caption.jpg",
+                        "https://media-cdn.tripadvisor.com/media/photo-s/0b/ed/85/50/caption.jpg"
+                    ))
 
                 )
             add(
                 Institution(
-                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло")
+                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "http://rest-barnaul.ru/uploads/images/1/about.jpg",
+                        "https://media-cdn.tripadvisor.com/media/photo-s/0b/ed/85/50/caption.jpg"
+
+                    ))
+
+            )
+            add(
+                Institution(
+                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "http://rest-barnaul.ru/uploads/images/1/about.jpg"
+
+                    ))
+
+            )
+            add(
+                Institution(
+                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "http://rest-barnaul.ru/uploads/images/1/about.jpg"
+
+                    ))
+
+            )
+            add(
+                Institution(
+                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "http://rest-barnaul.ru/uploads/images/1/about.jpg"
+
+                    ))
+
+            )
+            add(
+                Institution(
+                    "Bazunga",3.5f,"Еда Умпа-Лумпы ыофр волфыв рлоыфлр влыфрлврфло",
+                    pictureUrls = arrayListOf(
+                        "http://rest-barnaul.ru/uploads/images/1/about.jpg"
+
+                    ))
 
             )
 

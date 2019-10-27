@@ -14,7 +14,7 @@ class SampleRepository(private val firebase: DatabaseReference) {
     }
 
     suspend fun getSamples(): AsyncResult<List<Sample>> {
-        return firebase.getData(Table.SAMPLE)
+        return firebase.getData(Table.SAMPLE)// здесь будет вместо sample переменная которую мы будем передавать для опознания таблицы в firebase
     }
 }
 

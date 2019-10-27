@@ -7,6 +7,6 @@ class ItemDiscountActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.item_discount)
+        setContentView(R.layout.item_recomendation)
     }
 }

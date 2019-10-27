@@ -13,4 +13,13 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
 </resources>

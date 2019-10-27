@@ -39,12 +39,12 @@ class InstitutionListAdapter : RecyclerView.Adapter<InstitutionListAdapter.Insti
                 view.titleTextView.text=item.title
                 view.description.text=item.description
                 view.ratingBar.rating=item.rating
-//                try{
-//                    view.bgImage.loadImage(item.pictureUrls?.get(0) ?:"", it)
-//                }catch (e: Exception) {
-//                    view.bgImage.loadImage("", it)
-//                    e.printStackTrace()
-//                }
+                try{
+                    view.bgImage.loadImage(item.pictureUrls?.get(0) ?:"", it)
+                }catch (e: Exception) {
+                    view.bgImage.loadImage("", it)
+                    e.printStackTrace()
+                }
 
             }
 
