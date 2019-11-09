@@ -7,6 +7,8 @@ import com.example.library.R
 import com.example.library.entities.Institution
 import com.example.library.presentation.institutionInfo.imageTabs.ImagePagerAdapter
 import kotlinx.android.synthetic.main.activity_institutions_detail.*
+import android.view.View
+
 
 class InstitutionsDetailActivity : AppCompatActivity() {
     private lateinit var institution:Institution
@@ -24,6 +26,8 @@ class InstitutionsDetailActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
         bindPagerAdapter()
+
+        toolbar.setNavigationOnClickListener { onBackPressed() }
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -45,6 +49,8 @@ class InstitutionsDetailActivity : AppCompatActivity() {
         dots.attachViewPager(imagePager)
 
     }
+
+
 
 
 }
