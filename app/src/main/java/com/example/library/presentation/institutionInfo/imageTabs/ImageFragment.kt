@@ -27,7 +27,7 @@ class ImageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val link=arguments?.getString(EVENT_IMAGE_LINK)
-        view.eventImage.loadImage(link?:"",this)
+        view.institutionImage.loadImage(link?:"",this)
     }
     companion object{
         fun newInstance(data:Bundle?):ImageFragment{

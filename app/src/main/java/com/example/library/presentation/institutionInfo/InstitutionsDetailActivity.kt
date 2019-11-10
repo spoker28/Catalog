@@ -12,6 +12,7 @@ import android.view.View
 
 class InstitutionsDetailActivity : AppCompatActivity() {
     private lateinit var institution:Institution
+    val institutionDetail= InstitutionDetailFragment()
 //    private lateinit var
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,11 @@ class InstitutionsDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_institutions_detail)
         institution = intent.getSerializableExtra("institution") as Institution//Принимает информацию об ивенте
         setSupportActionBar(toolbar)
+
+        comparisonButton.setOnClickListener {
+
+
+        }
 
         supportActionBar?.apply {
             title = "Catalog"
@@ -42,7 +48,6 @@ class InstitutionsDetailActivity : AppCompatActivity() {
         }
     }
     private fun bindPagerAdapter(){
-        val institutionDetail= InstitutionDetailFragment()
         val imagePagerAdaptor = ImagePagerAdapter(supportFragmentManager,institution.pictureUrls as ArrayList<String>)
         imagePager.adapter=imagePagerAdaptor
         supportFragmentManager.beginTransaction().add(R.id.bottomContainer,institutionDetail).commit()

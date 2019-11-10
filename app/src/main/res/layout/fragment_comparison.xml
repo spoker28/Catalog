@@ -4,36 +4,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".Comparison">
-    <androidx.constraintlayout.widget.ConstraintLayout
+        tools:context=".presentation.comparison.Comparison">
+    <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="16dp"
-            android:id="@+id/institutionsList"
-            android:elevation="8dp"
             app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/fragment_institution_info_comparison"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <TableLayout
-                android:id="@+id/tabs"
-                android:background="@android:color/white"
-                app:tabSelectedTextColor="@android:color/black"
-                app:tabTextColor="#70000000"
-                app:tabTextAppearance="@style/tab_text"
-                app:tabIndicatorHeight="2dp"
-                app:tabIndicatorColor="@color/colorPrimary"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.viewpager.widget.ViewPager
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/institutionsList"
-            android:id="@+id/viewpagert"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content"
         />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:backgroundTint="@color/ThemeYellow"

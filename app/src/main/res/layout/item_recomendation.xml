@@ -5,7 +5,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp">
 
 
@@ -62,41 +61,6 @@
                     android:layout_marginEnd="16dp"
                     android:background="#8B8B8B"
                     app:layout_constraintTop_toBottomOf="@id/titleTextView" />
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/btnInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    >
-
-                <TextView
-                        android:id="@+id/detailTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="2dp"
-                        android:text="Подробнее"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@id/rightImageView"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                        android:id="@+id/rightImageView"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_marginTop="2dp"
-                        android:tint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <TextView
                     android:id="@+id/description"
                     android:layout_width="0dp"
@@ -106,9 +70,9 @@
                     android:text="Описание"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="@id/btnInfo"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@id/btnInfo">
+                    app:layout_constraintRight_toRightOf="parent">
 
             </TextView>
             <RatingBar

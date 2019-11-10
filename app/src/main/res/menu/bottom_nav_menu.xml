@@ -19,6 +19,6 @@
     <item
             android:id="@+id/navigation_comparison"
             android:icon="@drawable/comparison"
-            android:title="@string/title_settings"/>
+            android:title="@string/title_comparison"/>
 
 </menu>

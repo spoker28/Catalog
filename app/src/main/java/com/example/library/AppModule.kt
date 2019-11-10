@@ -1,10 +1,10 @@
 package com.example.library
 
 import com.example.library.base.CoroutineProvider
-import com.example.library.presentation.Institution.InstitutionRepository
-import com.example.library.presentation.Institution.InstitutionViewModel
-import com.example.library.presentation.InstitutionsList.InstitutionListRepository
-import com.example.library.presentation.InstitutionsList.InstitutionListViewModel
+import com.example.library.presentation.institution.InstitutionRepository
+import com.example.library.presentation.institution.InstitutionViewModel
+import com.example.library.presentation.institutionsList.InstitutionListRepository
+import com.example.library.presentation.institutionsList.InstitutionListViewModel
 import com.example.library.presentation.institutionInfo.characteristic.CharacteristicRepository
 import com.example.library.presentation.institutionInfo.characteristic.CharacteristicViewModel
 import com.example.library.presentation.institutionInfo.date.DateRepository

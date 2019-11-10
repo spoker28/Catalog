@@ -14,12 +14,12 @@
             tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".presentation.institutionInfo.InstitutionsDetailActivity"></activity>
         <activity android:name=".presentation.institutionInfo.InstitutionDetailFragment" />
-        <activity android:name=".presentation.InstitutionsList.ItemInstitutionsActivity" />
+        <activity android:name=".presentation.institutionsList.ItemInstitutionsActivity" />
         <activity android:name=".ItemDiscountActivity" />
         <activity
                 android:name=".presentation.main.MainActivity"
                 android:label="@string/title_activity_main" />
-        <activity android:name=".presentation.Institution.InstitutionActivity" />
+        <activity android:name=".presentation.institution.InstitutionActivity" />
         <activity
                 android:name=".presentation.SplashActivity"
                 android:screenOrientation="portrait"

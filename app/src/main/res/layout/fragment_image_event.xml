@@ -6,7 +6,7 @@
         tools:context=".presentation.institutionInfo.imageTabs.ImageFragment">
 
     <ImageView
-            android:id="@+id/eventImage"
+            android:id="@+id/institutionImage"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

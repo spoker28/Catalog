@@ -11,7 +11,7 @@ import com.example.library.base.Status
 import com.example.library.entities.Sample
 import com.example.library.extensions.alert
 import com.example.library.extensions.toast
-import com.example.library.presentation.Institution.InstitutionActivity
+import com.example.library.presentation.institution.InstitutionActivity
 import kotlinx.android.synthetic.main.activity_sample.*
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 

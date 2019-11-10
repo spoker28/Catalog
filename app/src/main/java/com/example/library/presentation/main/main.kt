@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.library.R
-import com.example.library.presentation.InstitutionsList.InstitutionsFragment
+import com.example.library.presentation.institutionsList.InstitutionsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: AppCompatActivity() {
