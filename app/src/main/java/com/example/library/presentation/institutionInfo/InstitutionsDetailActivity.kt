@@ -7,7 +7,9 @@ import com.example.library.R
 import com.example.library.entities.Institution
 import com.example.library.presentation.institutionInfo.imageTabs.ImagePagerAdapter
 import kotlinx.android.synthetic.main.activity_institutions_detail.*
-import android.view.View
+import com.example.library.entities.Characteristic
+import com.example.library.entities.ComparisonList
+import java.io.Serializable
 
 
 class InstitutionsDetailActivity : AppCompatActivity() {
@@ -21,10 +23,13 @@ class InstitutionsDetailActivity : AppCompatActivity() {
         institution = intent.getSerializableExtra("institution") as Institution//Принимает информацию об ивенте
         setSupportActionBar(toolbar)
 
-        comparisonButton.setOnClickListener {
-
-
-        }
+//        comparisonButton.setOnClickListener {
+//            var comparisonList=ComparisonList()
+//            var characteristics:List<Characteristic>
+//            characteristics=InstitutionDetailFragment().
+//            intent.putExtra("institution",comparisonList.getComparisonList() as Serializable)
+//
+//        }
 
         supportActionBar?.apply {
             title = "Catalog"

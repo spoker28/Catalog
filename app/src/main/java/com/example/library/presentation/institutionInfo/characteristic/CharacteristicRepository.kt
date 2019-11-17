@@ -7,6 +7,7 @@ import com.example.library.extensions.getData
 import com.google.firebase.database.DatabaseReference
 
 class CharacteristicRepository(private val firebase: DatabaseReference){
+
     suspend fun getCharacteristic():AsyncResult<List<Characteristic>>{
         return firebase.getData(Table.CHARACTERISTIC)
 

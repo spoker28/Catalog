@@ -9,14 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.library.R
 import com.example.library.base.BaseFragment
 import com.example.library.entities.Characteristic
-import com.example.library.entities.Date
 import com.example.library.presentation.institutionInfo.characteristic.CharacteristicListAdapter
 import com.example.library.presentation.institutionInfo.characteristic.CharacteristicViewModel
 import com.example.library.presentation.institutionInfo.date.DateListAdapter
 import com.example.library.presentation.institutionInfo.date.DateViewModel
 import kotlinx.android.synthetic.main.fragment_institution_detail.*
-import kotlinx.android.synthetic.main.item_characteristics.*
 import org.koin.androidx.viewmodel.ext.android.getViewModel
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -44,7 +43,7 @@ class InstitutionDetailFragment : BaseFragment(){
         characteristicViewModel.characteristicListLiveData.observe(this,characteristicListObserver)
 
     }
-    val dateListObserver = Observer<List<Date>> {
+    val dateListObserver = Observer<List<Calendar>> {
         dateListAdapter.setDataSet(it)
     }
     val characteristicListObserver = Observer<List<Characteristic>> {
@@ -67,3 +66,31 @@ class InstitutionDetailFragment : BaseFragment(){
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loh))

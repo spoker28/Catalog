@@ -2,30 +2,20 @@ package com.example.library.presentation.institutionInfo.date
 
 import androidx.lifecycle.MutableLiveData
 import com.example.library.base.BaseViewModel
-import com.example.library.entities.Date
+import com.example.library.entities.Institution
+import java.util.*
+import kotlin.collections.ArrayList
 
 class DateViewModel(private val repository: DateRepository):BaseViewModel(){
-    var dateListLiveData = MutableLiveData<ArrayList<Date>>()
+    var dateListLiveData = MutableLiveData<ArrayList<Calendar>>()
 
-    fun getDate(){
+    fun getDate(institution: Institution){
 //        makeRequest({repository.getDate()}){ res->
 //            unwrap(res){
 //                placeListLiveData.value = it as ArrayList<Date>
 //            }
 //        }
-        val list = arrayListOf<Date>().apply {
-            add(Date("Понедельник","10:00-18:00"))
-            add(Date("Вторник","10:00-18:00"))
-            add(Date("Среда","10:00-18:00"))
-            add(Date("Четверг","10:00-18:00"))
-            add(Date("Пятница","10:00-18:00"))
-            add(Date("Суббота","12:00-18:00"))
-            add(Date("Воскресенье","Выходной"))
-
-
-
-        }
-        dateListLiveData.value=list
+        dateListLiveData.value=institution.dateList
 
     }
 

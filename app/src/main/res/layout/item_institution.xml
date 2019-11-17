@@ -14,7 +14,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:background="@drawable/yellowcircle"
+            android:background="@drawable/ic_circle_1_yellow_64dp"
     />
     <TextView
             android:id="@+id/titlebutton"
