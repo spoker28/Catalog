@@ -1,3 +1,5 @@
 package com.example.library.entities
 
-data class Characteristic(val characteristicname:String, val characteristic:String)
+import java.io.Serializable
+
+data class Characteristic(val characteristicname:String, val characteristic:String):Serializable

@@ -18,8 +18,11 @@
         <activity android:name=".ItemDiscountActivity" />
         <activity
                 android:name=".presentation.main.MainActivity"
+                android:windowSoftInputMode="stateHidden"
                 android:label="@string/title_activity_main" />
-        <activity android:name=".presentation.institution.InstitutionActivity" />
+        <activity
+                android:windowSoftInputMode="stateHidden"
+                android:name=".presentation.institution.InstitutionActivity" />
         <activity
                 android:name=".presentation.SplashActivity"
                 android:screenOrientation="portrait"

@@ -32,16 +32,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -98,6 +88,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }
@@ -123,16 +123,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -189,6 +179,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }
@@ -210,16 +210,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -276,6 +266,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }
@@ -297,16 +297,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -363,6 +353,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }
@@ -384,16 +384,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -450,6 +440,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }
@@ -471,16 +471,6 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
 
                     ),dateList = arrayListOf(
                         GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,10)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
-                            set(Calendar.DAY_OF_WEEK, 0)
-                            set(Calendar.HOUR_OF_DAY,22)
-                            set(Calendar.MINUTE, 0)
-                        },
-                        GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 1)
                             set(Calendar.HOUR_OF_DAY,10)
                             set(Calendar.MINUTE, 0)
@@ -537,6 +527,16 @@ class InstitutionListViewModel(private val repository: InstitutionRepository): B
                         },
                         GregorianCalendar().apply {
                             set(Calendar.DAY_OF_WEEK, 6)
+                            set(Calendar.HOUR_OF_DAY,22)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
+                            set(Calendar.HOUR_OF_DAY,10)
+                            set(Calendar.MINUTE, 0)
+                        },
+                        GregorianCalendar().apply {
+                            set(Calendar.DAY_OF_WEEK, 7)
                             set(Calendar.HOUR_OF_DAY,18)
                             set(Calendar.MINUTE, 0)
                         }

@@ -7,14 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.library.R
 import com.example.library.entities.dayConvert
 import com.example.library.entities.timeConvert
-import com.example.library.presentation.institutionInfo.InstitutionDetailFragment
 import kotlinx.android.synthetic.main.item_date.view.*
 import java.util.*
 import kotlin.collections.ArrayList
 
 class DateListAdapter : RecyclerView.Adapter<DateListAdapter.dateViewHolder>(){
-    var fragment : InstitutionDetailFragment? = null
-    var dateList = ArrayList<Calendar>()
+    private var dateList = ArrayList<Calendar>()
     override fun getItemCount(): Int= dateList.size
 
 

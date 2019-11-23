@@ -6,12 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.library.R
 import com.example.library.entities.Characteristic
-import com.example.library.presentation.institutionInfo.InstitutionDetailFragment
 import kotlinx.android.synthetic.main.item_characteristics.view.*
 
 
 class CharacteristicListAdapter(): RecyclerView.Adapter<CharacteristicListAdapter.characteristicViewHolder>() {
-    var fragment : InstitutionDetailFragment? = null
     var characteristicList = ArrayList<Characteristic>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): characteristicViewHolder {

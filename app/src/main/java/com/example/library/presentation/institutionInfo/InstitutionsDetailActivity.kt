@@ -3,18 +3,27 @@ package com.example.library.presentation.institutionInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.library.R
 import com.example.library.entities.Institution
 import com.example.library.presentation.institutionInfo.imageTabs.ImagePagerAdapter
 import kotlinx.android.synthetic.main.activity_institutions_detail.*
 import com.example.library.entities.Characteristic
-import com.example.library.entities.ComparisonList
-import java.io.Serializable
+import com.example.library.presentation.institutionInfo.characteristic.CharacteristicListAdapter
+import com.example.library.presentation.institutionInfo.date.DateListAdapter
+import kotlinx.android.synthetic.main.activity_institutions_detail.characteristics
+import kotlinx.android.synthetic.main.activity_institutions_detail.dateList
+import kotlinx.android.synthetic.main.activity_institutions_detail.view.*
+import org.koin.androidx.viewmodel.ext.android.getViewModel
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class InstitutionsDetailActivity : AppCompatActivity() {
     private lateinit var institution:Institution
-    val institutionDetail= InstitutionDetailFragment()
+    private var dateListAdapter= DateListAdapter()
+    private var characteristicListAdapter= CharacteristicListAdapter()
 //    private lateinit var
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,9 +46,20 @@ class InstitutionsDetailActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
         bindPagerAdapter()
+        description.text=institution.description
+        insttitle.text=institution.title
+        dateList.layoutManager=LinearLayoutManager(this)
+        dateList.adapter=dateListAdapter
+        characteristics.layoutManager=LinearLayoutManager(this)
+        characteristics.adapter=characteristicListAdapter
+
+        dateListAdapter.setDataSet(institution.dateList)
+        characteristicListAdapter.setDataset(institution.characteristicList)
 
         toolbar.setNavigationOnClickListener { onBackPressed() }
+
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item?.itemId){
@@ -55,7 +75,6 @@ class InstitutionsDetailActivity : AppCompatActivity() {
     private fun bindPagerAdapter(){
         val imagePagerAdaptor = ImagePagerAdapter(supportFragmentManager,institution.pictureUrls as ArrayList<String>)
         imagePager.adapter=imagePagerAdaptor
-        supportFragmentManager.beginTransaction().add(R.id.bottomContainer,institutionDetail).commit()
         dots.attachViewPager(imagePager)
 
     }

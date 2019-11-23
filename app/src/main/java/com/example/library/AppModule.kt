@@ -5,10 +5,6 @@ import com.example.library.presentation.institution.InstitutionRepository
 import com.example.library.presentation.institution.InstitutionViewModel
 import com.example.library.presentation.institutionsList.InstitutionListRepository
 import com.example.library.presentation.institutionsList.InstitutionListViewModel
-import com.example.library.presentation.institutionInfo.characteristic.CharacteristicRepository
-import com.example.library.presentation.institutionInfo.characteristic.CharacteristicViewModel
-import com.example.library.presentation.institutionInfo.date.DateRepository
-import com.example.library.presentation.institutionInfo.date.DateViewModel
 import com.example.library.presentation.sample.SampleRepository
 import com.example.library.presentation.sample.SampleViewModel
 import com.google.firebase.database.FirebaseDatabase
@@ -31,18 +27,12 @@ val appModule = module {
     factory {
         SampleRepository(get())
     }
-    factory {
-        CharacteristicRepository(get())
-    }
 
     factory {
         InstitutionRepository(get())
     }
     factory {
         InstitutionListRepository(get())
-    }
-    factory {
-        DateRepository(get())
     }
 
     viewModel {
@@ -55,12 +45,6 @@ val appModule = module {
 
     viewModel {
         InstitutionListViewModel(get())
-    }
-    viewModel {
-        DateViewModel(get())
-    }
-    viewModel {
-        CharacteristicViewModel(get())
     }
 }
 
