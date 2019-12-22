@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.library.R
+import com.example.library.entities.ComparisonList
 import com.example.library.entities.Institution
 import com.example.library.extensions.loadImage
 import kotlinx.android.synthetic.main.item_recomendation.view.*
@@ -35,6 +36,9 @@ class InstitutionListAdapter : RecyclerView.Adapter<InstitutionListAdapter.Insti
     }
     inner class InstitutionListViewHolder(val view: View) : RecyclerView.ViewHolder(view){
         fun bindView(item : Institution){
+            view.comparisonButton.setOnClickListener {
+                ComparisonList.comparisonList?.add(item)
+            }
             fragment?.let{
                 view.titleTextView.text=item.title
                 view.description.text=item.description

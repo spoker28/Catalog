@@ -1,5 +1,6 @@
 package com.example.library.presentation.institutionInfo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,6 +11,8 @@ import com.example.library.entities.Institution
 import com.example.library.presentation.institutionInfo.imageTabs.ImagePagerAdapter
 import kotlinx.android.synthetic.main.activity_institutions_detail.*
 import com.example.library.entities.Characteristic
+import com.example.library.entities.ComparisonList
+import com.example.library.presentation.comparison.ComparisonFragment
 import com.example.library.presentation.institutionInfo.characteristic.CharacteristicListAdapter
 import com.example.library.presentation.institutionInfo.date.DateListAdapter
 import kotlinx.android.synthetic.main.activity_institutions_detail.characteristics
@@ -32,13 +35,9 @@ class InstitutionsDetailActivity : AppCompatActivity() {
         institution = intent.getSerializableExtra("institution") as Institution//Принимает информацию об ивенте
         setSupportActionBar(toolbar)
 
-//        comparisonButton.setOnClickListener {
-//            var comparisonList=ComparisonList()
-//            var characteristics:List<Characteristic>
-//            characteristics=InstitutionDetailFragment().
-//            intent.putExtra("institution",comparisonList.getComparisonList() as Serializable)
-//
-//        }
+        comparisonButton.setOnClickListener {
+            ComparisonList.comparisonList?.add(institution)
+        }
 
         supportActionBar?.apply {
             title = "Catalog"

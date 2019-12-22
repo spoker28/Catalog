@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.library.R
+import com.example.library.entities.ComparisonList
+import com.example.library.presentation.comparison.ComparisonFragment
 import com.example.library.presentation.institutionsList.InstitutionsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,7 +19,7 @@ class MainActivity: AppCompatActivity() {
     }
 
     private var listFragment: List<Fragment> =
-        listOf(InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment())
+        listOf(InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),InstitutionsFragment(),ComparisonFragment())
     private var selectedFragment = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {

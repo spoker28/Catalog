@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.library.R
 import com.example.library.base.BaseFragment
+import com.example.library.entities.ComparisonList
 import com.example.library.entities.Institution
 import com.example.library.presentation.institutionInfo.InstitutionsDetailActivity
 import kotlinx.android.synthetic.main.fragment_institutions.*
@@ -31,6 +32,7 @@ class InstitutionsFragment : BaseFragment(),OnInstitutionClickListener {
 
     private lateinit var viewModel: InstitutionListViewModel
     private lateinit var institutionListAdapter:InstitutionListAdapter
+
 
 
     override fun layoutId() = R.layout.fragment_institutions
@@ -69,3 +71,4 @@ class InstitutionsFragment : BaseFragment(),OnInstitutionClickListener {
 interface OnInstitutionClickListener {
     fun onClick(pos: Int, item: Institution)
 }
+

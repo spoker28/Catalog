@@ -22,5 +22,6 @@ enum class CategoryType {
     Educationalcenter,
     School,
     University,
-    Policestation
+    Policestation,
+    Bank
 }

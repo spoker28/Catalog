@@ -13,8 +13,6 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".presentation.institutionInfo.InstitutionsDetailActivity"></activity>
-        <activity android:name=".presentation.institutionInfo.InstitutionDetailFragment" />
-        <activity android:name=".presentation.institutionsList.ItemInstitutionsActivity" />
         <activity android:name=".ItemDiscountActivity" />
         <activity
                 android:name=".presentation.main.MainActivity"
